@@ -11,24 +11,40 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="main-content">
-      <div class="container">
-        <nav class="sitenav">
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+      <div class="site-header__container container">
+        <!-- LOGO -->
+        <a href="" class="site-header__logo logo">
+          <img
+            class="logo__img"
+            src="img/logo.svg"
+            alt="Shortly logo"
+            width="120"
+            height="33"
+          />
+        </a>
+
+        <nav class="site-header__sitenav sitenav">
           <ul class="sitenav__list">
-            <img class="sitenav__logo" src="img/logo.svg" alt="" />
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
+              <a class="sitenav__link" href="#">Features</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
+              <a class="sitenav__link" href="#">Pricing</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
+              <a class="sitenav__link" href="#">Resources</a>
             </li>
           </ul>
         </nav>
+
+        <div class="site-header__auth">
+          <a class="site-header__login-link" href="#">Login</a>
+          <a class="button button--small" href="#">Sign Up</a>
+        </div>
       </div>
-    </main>
+    </header>
 
     <script src="js/main.js"></script>
   </body>
