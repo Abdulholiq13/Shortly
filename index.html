@@ -1,148 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- SITE-HEADER -->
-    <header class="site-header">
-      <div class="site-header__container container">
-        <!-- LOGO -->
-        <a href="" class="site-header__logo logo">
-          <img
-            class="logo__img"
-            src="img/logo.svg"
-            alt="Shortly logo"
-            width="120"
-            height="33"
-          />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
 
-        <nav class="site-header__sitenav sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Features</a>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Pricing</a>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Resources</a>
-            </li>
-          </ul>
-        </nav>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-        <div class="site-header__auth">
-          <a class="site-header__login-link" href="#">Login</a>
-          <a class="button button--small" href="#">Sign Up</a>
+<body>
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="site-header__container container">
+      <!-- LOGO -->
+      <a href="" class="site-header__logo logo">
+        <img class="logo__img" src="img/logo.svg" alt="Shortly logo" width="120" height="33" />
+      </a>
+
+      <nav class="site-header__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Features</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Pricing</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Resources</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="site-header__auth">
+        <a class="site-header__login-link" href="#">Login</a>
+        <a class="button button--small" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN-CONTENT -->
+  <main class="main-content">
+    <!-- HERO -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <h1 class="hero__title">More than just shorter links</h1>
+          <p class="hero__text">
+            Build your brand’s recognition and get detailed insights on how
+            your links are performing.
+          </p>
+          <a class="button" href="#">Get Started</a>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- MAIN-CONTENT -->
-    <main class="main-content">
-      <!-- HERO -->
-      <div class="hero">
-        <div class="container">
-          <div class="hero-inner">
-            <h1 class="hero__title">More than just shorter links</h1>
-            <p class="hero__text">
-              Build your brand’s recognition and get detailed insights on how
-              your links are performing.
-            </p>
-            <a class="button" href="#">Get Started</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="index-url-shortener-features-wrapper">
-        <div class="index-url-shortener-features-wrapper__url-shortener">
-          <!-- URL-SHORTENER-FORM -->
-          <section class="url-shortener">
-            <div class="container">
-              <h2 class="visually-hidden">URL shortener</h2>
-              <form
-                class="url-shortener__from"
-                action="https://echo.htmlacademy.ru"
-                method="POST"
-              >
-                <div class="url-shortener__input-wrapper">
-                  <input
-                    class="url-shortener__input"
-                    type="url"
-                    name="url"
-                    placeholder="Shorten a link here..."
-                    aria-label="URL input"
-                    required
-                  />
-                  <div class="url-shortener__eror-msg">Please add a link</div>
+    <div class="index-url-shortener-features-wrapper">
+      <div class="index-url-shortener-features-wrapper__url-shortener">
+        <!-- URL-SHORTENER-FORM -->
+        <section class="url-shortener">
+          <div class="container">
+            <h2 class="visually-hidden">URL shortener</h2>
+            <form class="url-shortener__from js-url-shortener-form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="url-shortener__input-wrapper">
+                <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..."
+                  aria-label="URL input" required />
+                <div class="url-shortener__eror-msg">Please add a link</div>
+              </div>
+              <button class="url-shortener__submit button button--rectangle-big" type="submit">
+                Shorten It!
+              </button>
+            </form>
+            <div class="url-shortener__results">
+              <div class="url-shortener-result">
+                <div class="url-shortener__orginal-link">
+                  https://www.frontendmentor.io
                 </div>
-                <button
-                  class="url-shortener__submit button button--rectangle-big"
-                  type="submit"
-                >
-                  Shorten It!
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/k4lKyk</a>
+                <button class="url-shortener__cop-button button button--small button--rectangle" type="button">
+                  Copy
                 </button>
-              </form>
-              <div class="url-shortener__results">
-                <div class="url-shortener-result">
-                  <div class="url-shortener__orginal-link">
-                    https://www.frontendmentor.io
-                  </div>
-                  <a class="url-shortener__short-link" href="#" target="_blank"
-                    >https://rel.ink/k4lKyk</a
-                  >
-                  <button
-                    class="url-shortener__cop-button button button--small button--rectangle"
-                    type="button"
-                  >
-                    Copy
-                  </button>
-                </div>
+              </div>
 
-                <div class="url-shortener-result">
-                  <div class="url-shortener__orginal-link">
-                    https://twitter.com/frontendmentor
-                  </div>
-                  <a class="url-shortener__short-link" href="#" target="_blank"
-                    >https://rel.ink/gxOXp9</a
-                  >
-                  <button
-                    class="url-shortener__cop-button button button--small button--rectangle"
-                    type="button"
-                  >
-                    Copy
-                  </button>
+              <div class="url-shortener-result">
+                <div class="url-shortener__orginal-link">
+                  https://twitter.com/frontendmentor
                 </div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gxOXp9</a>
+                <button class="url-shortener__cop-button button button--small button--rectangle" type="button">
+                  Copy
+                </button>
+              </div>
 
-                <div class="url-shortener-result">
-                  <div class="url-shortener__orginal-link">
-                    https://www.linkedin.com/company/frontend-mentor
-                  </div>
-                  <a class="url-shortener__short-link" href="#" target="_blank"
-                    >https://rel.ink/gob3X9</a
-                  >
-                  <button
-                    class="url-shortener__cop-button button button--small button--rectangle"
-                    type="button"
-                  >
-                    Copy
-                  </button>
+              <div class="url-shortener-result">
+                <div class="url-shortener__orginal-link">
+                  https://www.linkedin.com/company/frontend-mentor
                 </div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gob3X9</a>
+                <button class="url-shortener__cop-button button button--small button--rectangle" type="button">
+                  Copy
+                </button>
               </div>
             </div>
-          </section>
-        </div>
-        <!-- INDEX-FEATURES -->
+          </div>
+        </section>
       </div>
-    </main>
-    <script src="js/main.js"></script>
-  </body>
+      <!-- INDEX-FEATURES -->
+    </div>
+  </main>
+
+</body>
+<script src="./js/main.js">
+</script>
+
 </html>
