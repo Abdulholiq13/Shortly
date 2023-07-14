@@ -25,7 +25,7 @@ if (elUrlShortener) {
       // Reset button text and class after 1 second
       setTimeout (function () {
         evt.target.textContent = 'Copy';
-        evt.target.remove('url-shortener__cop-button--copied')
+        evt.target.remove('url-shortener__cop-button--copied');
       }, 1000);
     }
   });
